@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inmobiliaria TorrePisos</title>
+   <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+
+<body>
+  <div class="container bg-light border border-5 border-success">
+    
+  <h1 class="mt-4 text-danger text-center">ALQUILER DE PISOS Y CASAS</h1>
+  
+
+  <div class="d-flex justify-content-center align-items-center">
+    <button id="btn_Conectar" class="btn btn-success mb-3">Conectar Metamask del inquilino</button>
+    <span id="cuentaMonedero" class="text-success m-2"></span>
+   <br/>
+  </div>
+
+  <table  class="table table-bordered">
+    <thead class="table-dark">
+    <tr>
+      <th class="text-info">PISO</th>
+      <th class="text-warning">ESTADO</th>
+      <th class="text-warning">INQUILINO</th>
+    </tr>
+  </thead>
+  <tbody id= "tablaPisos">
+    <!-- ahora los datos de la tabla se cargan desde la blockchain-->
+    
+  </tbody>
+  </table> 
+
+  <br/>
+<div class="form-group">
+
+<p>En nuestra inmobiliaria disponemos de 9 inmuebles en alquiler:</p>
+<span class="border border-5 border-info">
+<select id="lista" disabled class="bg-light text-info">
+  <option value="0">Elige un piso</option>
+</select>
+</span>
+</div>
+<br/>
+<button id="btn_Alquilar" class="btn btn-primary rounded-pill ms-4 mt-3 mb-3" disabled>Alquilar Piso</button>
+<button id="btn_Devolver" class="btn btn-secondary  rounded-pill ms-4 mt-3 mb-3" disabled>Devolver Piso</button>
+
+<p id="estado"></p>
+</div>
+<script src="index.js"></script>
+</body>
+
+</html>
