@@ -1,5 +1,5 @@
 //Código Javascript del Front-End
-
+//versión final
 import Web3 from "web3"; //importamos la librería web3
 import AlquilerPisos from "../../build/contracts/AlquilerPisos.json";
 
